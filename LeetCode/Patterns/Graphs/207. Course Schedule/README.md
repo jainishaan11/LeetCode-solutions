@@ -8,7 +8,7 @@
 Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Directed Acyclic Graph
 
 ### 🚀 Performance
-- **Runtime:** 82 ms
+- **Runtime:** 5 ms
 - **Memory:** 46.9 MB
 
 ---
