@@ -4,13 +4,13 @@ class Solution {
       List<List<Integer>> adj=new ArrayList<>();
       for(int i=0;i<numCourses;i++)
       {
-        list.add(new ArrayList<>());
+        adj.add(new ArrayList<>());
       }
       for(int i=0;i<prerequisites.length;i++) 
       {
          int x=prerequisites[i][0];
          int y=prerequisites[i][1];
-         list.get(y).add(x);
+         adj.get(y).add(x);
       }
       HashSet<Integer> set = new HashSet<>();
       int[] state=new int[numCourses];
@@ -23,7 +23,7 @@ class Solution {
       }
       return true;
     }
-    public boolean check(int ele,Hashset<Integer> set,List<List<Integer>> adj,int[] state)
+    public boolean check(int ele,HashSet<Integer> set,List<List<Integer>> adj,int[] state)
     {
        if(state[ele]==1)
        {
@@ -31,7 +31,7 @@ class Solution {
        }
        if(state[ele]==2)
        {
-         return true;;
+         return true;
        }
        
        
