@@ -1,6 +1,6 @@
 # 📝 130. Surrounded Regions (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/surrounded-regions/)
+🔗 [Problem Link](https://leetcode.com/problems/surrounded-regions)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
