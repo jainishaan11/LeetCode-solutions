@@ -16,7 +16,10 @@ class Solution {
             sum=sum+divisor;
             c++;
         }
-        c=c*n;
+        if(n==-1)
+        {
+            c=-c;
+        }
         if(sum==dividend)
         {
             return c;
