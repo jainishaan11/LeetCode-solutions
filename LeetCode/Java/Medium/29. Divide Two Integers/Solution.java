@@ -1,33 +1,33 @@
 class Solution {
-    public int divide(int dividend, int divisor) 
-    {
-        int c=0;
-        int sum=0;
-        int n=1;
-        if(divisor<0 ^ dividend<0)
-        {
-          n=-1;
+    public int divide(int dividend, int divisor) {
+
+        long dvd = Math.abs((long) dividend);
+        long dvs = Math.abs((long) divisor);
+
+        int ans = 0;
+
+        while (dvd >= dvs) {
+
+            long sum = dvs;
+            int c = 1;
+
+            while (sum + sum <= dvd) {
+                sum = sum + sum;
+                c = c + c;
+            }
+
+            dvd = dvd - sum;
+            ans = ans + c;
         }
-        dividend=Math.abs(dividend);
-        divisor=Math.abs(divisor);
-        
-        while(sum<dividend)
-        {
-            sum=sum+divisor;
-            c++;
+
+        if ((dividend < 0) ^ (divisor < 0)) {
+            ans = -ans;
         }
-        if(n==-1)
-        {
-            c=-c;
+
+        if (ans > Integer.MAX_VALUE) {
+            return Integer.MAX_VALUE;
         }
-        if(sum==dividend)
-        {
-            return c;
-        }
-        else
-        {
-            return c-n;
-        }
-        
+
+        return ans;
     }
 }
