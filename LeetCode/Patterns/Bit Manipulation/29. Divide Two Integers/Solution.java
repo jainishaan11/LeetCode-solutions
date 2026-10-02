@@ -3,6 +3,9 @@ class Solution {
 
         long dvd = Math.abs((long) dividend);
         long dvs = Math.abs((long) divisor);
+        if (dividend == Integer.MIN_VALUE && divisor == -1) {
+    return Integer.MAX_VALUE;
+}
 
         int ans = 0;
 
