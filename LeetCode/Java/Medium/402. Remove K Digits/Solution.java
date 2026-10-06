@@ -10,7 +10,7 @@ class Solution {
       {
         if(k>0 && num.charAt(i)>num.charAt(i+1))
         {
-          k--;
+          k--;i--;
         }
         else
         {
