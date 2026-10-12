@@ -2,14 +2,14 @@
 
 🔗 [Problem Link](https://leetcode.com/problems/time-needed-to-buy-tickets/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C-blue)
 
 ### 💡 Tags
 Array, Queue, Simulation
 
 ### 🚀 Performance
-- **Runtime:** 11 ms
-- **Memory:** 46.5 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
