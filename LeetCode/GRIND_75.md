@@ -86,7 +86,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 
 ### 📂 Tree
 - [ ] Maximum Depth of Binary Tree
-- [x] [Same Tree](./Java/Easy/100. Same Tree/)
+- [x] [Same Tree](./C/Easy/100. Same Tree/)
 - [ ] Invert Binary Tree
 - [ ] Binary Tree Maximum Path Sum
 - [ ] Binary Tree Level Order Traversal
