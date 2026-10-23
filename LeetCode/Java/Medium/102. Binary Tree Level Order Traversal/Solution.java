@@ -1,22 +1,31 @@
 class Solution {
-    List<List<Integer>> ans=new ArrayList<>();
-    public List<List<Integer>> levelOrder(TreeNode root) 
-    {
-        makelist(root,0);
-        return ans;
+    
+    
+    List<List<Integer>> ans = new ArrayList<>();
+    
+    public void order(TreeNode node, int level){
+        if(ans.size() == level){
+            ans.add(new ArrayList<Integer>());
+        }
+        ans.get(level).add(node.val);
+        
+        if(node.left != null){
+            order(node.left, level+1);
+        }
+        if(node.right != null){
+            order(node.right, level+1);
+        }
+        
     }
-    public void makelist(TreeNode p,int l)
-    {
-        if(p==null)
-        {
-          return;
+    
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        
+        
+        if(root == null){
+            return ans;
         }
-        if(l>=ans.size())
-        {
-            ans.add(new ArrayList<>());
-        }
-        ans.get(l).add(p.val);
-        makelist(p.left,1+l);
-        makelist(p.right,1+l);
+        order(root, 0);
+        return ans;
+        
     }
 }
